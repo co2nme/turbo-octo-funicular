@@ -1,5 +1,3 @@
-"""Dump all environment variables to console and a text file."""
-
 from pathlib import Path
 import os
 import sys
