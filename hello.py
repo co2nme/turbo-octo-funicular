@@ -1,1 +1,4 @@
-env | sort > /tmp/all_env_vars.txt && wc -l /tmp/all_env_vars.txt
+import os
+
+for k, v in sorted(os.environ.items()):
+    print(f"{k}={v}")
