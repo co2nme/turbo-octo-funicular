@@ -1,3 +1,4 @@
+
 import socket
 import urllib.request
 import urllib.parse
@@ -95,7 +96,8 @@ def main():
 
     # Count env vars safely — no values exposed
     try:
-        print env
+        env_count = len(os.environ)
+        print(f"  Env Vars   : {env_count} variables detected")
     except Exception:
         print(f"  Env Vars   : unavailable")
     print("═" * 45)
